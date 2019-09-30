@@ -24,7 +24,6 @@ class testCase {
 				return obj.executions;
 			}
 		}
-
 		return false;
 	}
 }
