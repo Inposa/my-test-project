@@ -2,7 +2,7 @@ language: node_js
 node_js:
         - "node"
 script:
-        - echo “toto”
+        - echo “tootoo”
         - npm test
         - npm update
         - node_modules/.bin/jshint src
