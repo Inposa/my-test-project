@@ -2,16 +2,17 @@ language: node_js
 node_js:
         - "node"
 script:
-        - echo “tootoo”
         - npm test
         - npm update
         - node_modules/.bin/jshint src
         - node_modules/.bin/jsdoc src
 deploy:
-        provider : Inposa
-
+        provider : pages
         skip_cleanup: true
         keep_history: true
-
         github_token: $GITHUB_TOKEN
+        local_dir: out
+        on:
+          branch:
+            master
 
